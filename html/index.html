@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 100%;
+        }
+
+        .img-box{
+            width: 100%;
+            position:relative;
+            z-index:1;
+        }
+
+        .img-box img{
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            width:100%;
+            margin:auto;
+            z-index: -1;
+            *zoom:1;
+        }
+
+        .img-box:before {
+            content: "";
+            display: inline-block;
+            width: 0.1px;	/*必须要有数值，否则无法把高度撑起来*/
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="img-box">
+            <img src="https://h63542-image.oss-cn-shenzhen.aliyuncs.com/huangtao/WechatIMG50.jpeg" alt="" />
+        </div>
+        <div class="img-box">
+            <img src="https://h63542-image.oss-cn-shenzhen.aliyuncs.com/huangtao/WechatIMG51.jpeg" alt="" />
+        </div>
+        <div class="img-box">
+            <img src="https://h63542-image.oss-cn-shenzhen.aliyuncs.com/huangtao/WechatIMG52.jpeg" alt="" />
+        </div>
+        <div class="img-box">
+            <img src="https://h63542-image.oss-cn-shenzhen.aliyuncs.com/huangtao/WechatIMG53.jpeg" alt="" />
+        </div>
+        <div class="img-box">
+            <img src="https://h63542-image.oss-cn-shenzhen.aliyuncs.com/huangtao/WechatIMG54.jpeg" alt="" />
+        </div>
+        <div class="img-box">
+            <img src="https://h63542-image.oss-cn-shenzhen.aliyuncs.com/huangtao/WechatIMG55.jpeg" alt="" />
+        </div>
+        <div class="img-box">
+            <img src="https://h63542-image.oss-cn-shenzhen.aliyuncs.com/huangtao/WechatIMG56.jpeg" alt="" />
+        </div>
+    </div>
+</body>
+</html>
